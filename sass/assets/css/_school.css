@@ -1,0 +1,23 @@
+/*
+School Front Page
+*/
+/*
+* About US Section
+*/
+#about-container {
+  display: grid;
+  width: 100%; }
+
+.welcom-letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8d557; }
+
+.welcom-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px; }

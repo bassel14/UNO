@@ -1,0 +1,280 @@
+/* ----------------------------------------------------------------------------------------
+ * 3- Base Style.
+ * File Path : scss/base/base.scss
+ * Descrption : Master theme settings.
+ * ----------------------------------------------------------------------------------------
+ */
+/*--------------------------------------------------------------
+** 3.1 Default Settings for Body & Page.
+--------------------------------------------------------------
+*/
+body {
+	
+	color: $body-text-color;
+    
+	font: #{$base-font-size}/#{$baseline} $body-text-font;
+    
+	-webkit-font-smoothing: antialiased;
+}
+
+#page {
+	position: relative;
+	word-wrap: break-word;
+}
+/*--------------------------------------------------------------
+** 3.2 Default spacing for paragraphs.
+--------------------------------------------------------------
+*/
+p {
+	margin-bottom: $baseline;
+}
+/*--------------------------------------------------------------
+** 3.3 Default styles for all headings.
+--------------------------------------------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: $baseline 0 ;
+
+	font-family: $heading-font;
+    
+    font-weight: 700;
+    
+    clear: both;
+    
+    line-height: $extra-space;
+}
+/*--------------------------------------------------------------
+** 3.4 Individual styles for the headings.
+--------------------------------------------------------------
+*/
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    
+    li > ul, li > ol {
+        margin-bottom: 0;
+        margin-left: 1.5em;
+    }
+
+}
+/*--------------------------------------------------------------
+** 3.5 Links.
+--------------------------------------------------------------
+*/
+a {
+	color: $link-color2;
+    
+	text-decoration: underline;    
+    
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;   
+
+	&:hover {
+		color: $link-hover-color;
+        
+		text-decoration: underline;        
+        
+        -webkit-transition: all 0.3s ease-in-out;
+           -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+             -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;   
+	}
+}
+/*--------------------------------------------------------------
+** 3.6 Blockquotes.
+--------------------------------------------------------------
+*/
+blockquote {
+	font-style: italic;
+    color: #666;
+    padding: 10px 20px;
+    border-left: 8px solid $border-color;
+
+	cite {
+		display: block;
+        margin-top: 10px;
+	}
+    
+    p {
+        margin: 0;
+    }
+}
+
+/* For New Gutenberg blockquote block */
+.wp-block-pullquote {
+    border-left: 0px;
+}
+/*--------------------------------------------------------------
+** 3.7 HR, Media, Pre, Code, 
+--------------------------------------------------------------
+*/
+hr {
+	margin: $baseline 0;
+	
+	border-color: $border-color;
+}
+
+/**
+ * Make sure videos and embeds fit inside their containers.
+ */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+/**
+ * Fluid images for posts.
+ */
+img,
+img[class*="wp-image-"],
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail,
+.size-post-thumbnail,
+.size-uno-featured-image{
+	@extend .img-responsive;
+}
+
+pre {
+	background: #DDD;
+	//font-family: "Courier 10 Pitch", Courier, monospace;
+    font-family: inherit;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+/**
+ * Code.
+ */
+code {
+    font-family: inherit;
+	white-space: pre-wrap;
+    color: #888;
+    line-height: 1;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.wrap {
+    
+    margin-top: $widget-bottom-margin;
+    
+    margin-bottom: $widget-bottom-margin;
+}
+/*--------------------------------------------------------------
+** 3.8 Tables 
+--------------------------------------------------------------
+*/
+th {
+    padding: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.4em;
+    text-align: left;
+}
+table {
+    margin-bottom: $baseline;
+    border-collapse: collapse;
+    width: 100%;
+    
+    thead th {
+        border-bottom: 2px solid #bbb;
+        padding-bottom: 0.5em;
+    } 
+        
+    th:first-child, td:first-child {
+        padding-left: 0;
+    }
+    
+    th {
+        padding: 0.5em;
+        text-align: left;
+    }
+    
+    tr {
+        border-bottom: 1px solid $border-color;
+    }
+    
+    td {
+        padding: 0.6em;
+    }
+}
+/*--------------------------------------------------------------
+** 3.9  Other Elements 
+--------------------------------------------------------------
+*/
+dd {
+    margin: 0 1.5em 1.5em;
+}
+address {
+    font-style: italic;
+}
+abbr[title] {
+    border-bottom: 1px #767676 dotted;
+    text-decoration: none;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+dfn, cite, em, i {
+    font-style: italic;
+}
+mark, ins {
+    background: #ccc;
+    text-decoration: none;
+}
+kbd {
+    padding: .2rem .4rem;
+    font-size: 87.5%;
+    color: #fff;
+    background-color: #212529;
+    border-radius: .2rem;
+}
+q {
+    quotes: "“" "”" "‘" "’";
+}
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+tt, var {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+}
+/* figure {
+    width: 100%;
+} */
+.no-right-space {
+    padding-right: 0px ! important;
+}

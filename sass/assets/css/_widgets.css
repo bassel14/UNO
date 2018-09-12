@@ -1,0 +1,8 @@
+/* ----------------------------------------------------------------------------------------
+ * 5.3  Widgets Style.
+ * File Path : scss/modules/widgets.scss
+ * Descrption : This file is for special Widgets at Sidebar, Footer Sidebar, and others.
+ * ----------------------------------------------------------------------------------------
+ */
+.widget_calendar caption {
+  caption-side: top; }

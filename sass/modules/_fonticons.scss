@@ -1,0 +1,24 @@
+/* ----------------------------------------------------------------------------------------
+ * 5.1  Font Icons Style.
+ * File Path : scss/modules/fonticons.scss
+ * Descrption : Font awesom and all the kind of icons page.
+ * ----------------------------------------------------------------------------------------
+ */
+.footer_icons_style{        
+    font-size: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #999;
+}
+
+.unstyled_fonticons {
+    i{
+        font-size: 23px;
+        padding: 5px;
+        color: #999;
+
+        &:hover{
+            color:#fff;
+        }
+    }
+}

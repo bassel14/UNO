@@ -1,0 +1,10 @@
+/* ----------------------------------------------------------------------------------------
+ * BreadCrumbs.
+ * File Path : scss/layout/breadcrumbs.scss
+ * Descrption : Main layout Style for the theme Header.
+ * ----------------------------------------------------------------------------------------
+ */
+.breadcrumbs-content {
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea; }

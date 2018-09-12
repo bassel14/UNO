@@ -1,0 +1,182 @@
+/* ----------------------------------------------------------------------------------------
+ * 4.2  Layout Topbar Style.
+ * File Path : scss/layout/topbar.scss
+ * Descrption : The style for the topbar.
+ * ----------------------------------------------------------------------------------------
+ */
+
+.header-top { 
+    border-top: 4px solid $color-2; 
+    border-bottom: 1px solid $color-2; 
+    color: #fff;
+    background-color: $color_3;
+    
+    a {
+        color: $link-color2;
+        
+        &:hover{
+            color: $link-hover-color;
+        }
+    }
+    
+}
+
+.topbar-flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.topbar-container-center {    
+    justify-content: center;
+}
+.topbar-container-end {    
+    justify-content: flex-end;
+}
+.topbar-container-reverse {    
+    flex-direction: row-reverse;
+}
+
+/* All items to be 100% width via flex basis */
+.topbar-flex-container  {
+    flex: 1 100%;
+}
+.topbar-contact,
+.topbar-socialicons {
+    padding-right: 15px; 
+}
+
+.tb-search {
+    min-width: 27%;
+    /*justify-self: flex-end;*/
+    /*margin-left: auto;*/
+    form {
+        max-width: 100%;
+    }
+}
+
+@media all and(max-width: 1024px){
+    .first-topbar-element {
+        margin-left: unset;
+    }
+    .topbar-contact, .topbar-socialicons {
+        padding-right: 0px;
+    }
+    .small-search {
+        width: 120px;
+    }
+}
+
+@media all and(max-width: 992px){
+    .topbar-flex-container {
+        flex-direction: column;
+    }/* 
+    #top-bar {
+        padding-top: 37px;
+        min-height: 148px;
+    } */
+    .topbar-contact,
+    .topbar-socialicons,
+    .topbar-menu,
+    .tb-search{
+        width: 100%;
+    }
+
+    .tb-search form {
+        max-width: 100%;
+    }
+
+    .topbar-socialicons,
+    .topbar-menu,
+    .tb-search {
+        border-top: 1px solid #444;
+    }
+
+    .topbar-contact,
+    .topbar-socialicons,
+    .topbar-menu {
+        border-bottom: 1px solid #222;
+    }
+     
+    .tb-search  {
+        padding: 2px 0;
+    }
+
+}
+
+@media all and(max-width: 414px){
+
+    #top-bar {
+        min-height: 182px;
+    }
+}
+@media all and(max-width: 320px){
+
+    #top-bar {
+        min-height: 217px;
+    }
+}
+
+@media (max-width: 992px) { 
+    
+    .header-top { 
+        border-bottom: 0;
+    } 
+    .header-top [class^='col-'] { 
+        text-align: center;
+    }
+    
+}
+
+
+.header-top .quickinfo-header li { 
+    padding: 10px 5px; 
+    display: inline-block;     
+    margin-left: 5px;
+
+    span {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    svg{
+        font-size: 16px;
+    }
+}
+.header-top .topbar-socialicons li{ 
+    padding: 8px 0px 0 0; 
+    display: inline-block;       
+    margin-left: 5px;   
+}
+
+.topbar-menu .topbar-menu-elements{
+    font-size: 12px; 
+    text-transform: capitalize;
+
+    li{
+        display: inline-block;
+        position: relative;
+        border-left: 1px solid #444;
+    }
+
+    a {
+        display: block;
+        padding: 5px 9px;
+        line-height: 35px;
+        color: #999;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+.top-list-inline {
+	@extend .l-list-unstyled;
+    @extend .unstyled_fonticons;
+    
+	li {
+		display: inline;
+	}
+}

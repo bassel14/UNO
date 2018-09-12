@@ -1,0 +1,104 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * style.scss
+ *
+ * Simple CSS framework made for Uno Theme Blog.
+ *
+ * Author: Webgear Media
+ *
+ * Date: 22/Feb/2018
+ *
+ * This framework is inspired by Jonathan Path's framework & the tutor Adi Purdila on tuts+.
+ * Many thanks!
+ * https://github.com/jonathanpath/SASS-SMACSS
+ * ----------------------------------------------------------------------------------------
+ */
+
+/*--------------------------------------------------------------
+            >>> TABLE OF CONTENTS  <<<
+----------------------------------------------------------------
+ * 1.0  import bourbon.
+ * 2.0  Utilities.
+            2.1 Settingsd
+            2.2 Utilities
+                2.2.1 Standards
+                2.2.2 Alignments
+ * 3.0  Base.
+            3.1 Default Settings for Body & Page.
+            3.2 Default spacing for paragraphs.
+            3.3 Default styles for all headings.
+            3.4 Individual styles for the headings.
+            3.5 Links.
+            3.6 Blockquotes.
+            3.7 HR, Media, Pre, Code... 
+            3.8 Tables
+            3.9 Other Elements.
+ * 4.0  Layout
+            4.1 Main
+            4.2 Top Bar
+            4.3 Header
+            4.4 Menu
+            4.5 Breadcrumbs
+            4.6 Footer
+            4.7 Post
+                4.7.1 Sticky Posts
+                4.7.2 Status & Aside Posts.
+                4.7.3 Entry header.
+                4.7.4 Entry Thumbnail.
+                4.7.5 Entry content.
+                4.7.6 Entry footer.
+                4.7.7 Post Navigation.
+                4.7.8 Comments.
+                4.7.9 Inside Post Pages links.
+                4.7.10 Gallaryes
+                4.7.11 Not Used Section.
+            4.8 SideBar
+ 5.0  Modules
+            5.1 Fonticns
+            5.2 Forms
+---------------------------------------------------------------- */
+
+@import "bourbon";
+
+@import "utilities/settings";
+@import "utilities/utilities";
+
+@import "base/base";
+
+@import "layout/main";
+@import "layout/topbar";
+@import "layout/header";
+@import "layout/menu";
+@import "layout/breadcrumbs";
+@import "layout/footer";
+@import "layout/post";
+@import "layout/sidebar";
+@import "layout/static";
+@import "layout/school";
+/*
+@import "layout/helpers";
+@import "layout/nav";
+@import "layout/widgets";
+@import "layout/blog";
+@import "layout/page";
+*/
+
+
+
+/* Modules */
+@import "modules/fonticons";
+@import "modules/forms";
+@import "modules/widgets";
+
+
+/*@import "modules/composer";
+@import "modules/buttons";
+@import "modules/contentbox";
+@import "modules/paralex";
+*/
+
+/* Theme */
+//@import "theme/general";  
+/*@import "theme/dark";     
+@import "theme/light"; */   
+/*@import "theme/gold";    */

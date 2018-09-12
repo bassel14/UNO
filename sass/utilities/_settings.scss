@@ -1,0 +1,79 @@
+/* ----------------------------------------------------------------------------------------
+ * 1- Site Settings File.
+ * File Path : scss/utilities/settings.scss
+ * Descrption : Main theme settings.
+ * ----------------------------------------------------------------------------------------
+ */
+
+/* Typography */
+$base-font-size: 16px;
+$halfbaseline: ($base-font-size * 0.5);
+$baseline: ($base-font-size * 1.5);
+
+@font-face {
+    font-family: Libre;
+    src: url(http://cosmostours-sy.com/wp-content/themes/uno/assets/fonts/libra/LibreFranklin-Regular.ttf);
+    font-weight: bold;
+}
+
+$body-text-font: "Libre", "Helvetica Neue", helvetica, arial, sans-serif;
+$heading-font: "Libre", "Helvetica Neue", helvetica, arial, sans-serif;
+
+$body-text-font2: "Helvetica Neue", Arial, sans-serif;
+$heading-font2: "Helvetica Neue", Arial, sans-serif;
+
+$font-1: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-2: 'Dosis', Georgia, serif;
+
+
+/*  Colors */
+$body-text-color: #222;
+$medium-text-color: lighten($body-text-color, 20%);
+$light-text-color: lighten($body-text-color, 50%);
+
+$link-color: #222;
+$link-hover-color: #666;
+
+$link-color2: #2980B9;
+$link-hover-color2: #2C3E50;
+
+$border-color: #ccc;
+
+$color-hr: #eee;
+
+$color-0: #fff;
+$color-1: #000;
+$color-2: #222;
+$color-3: #333;
+$color-4: #444;
+$color-5: #555;
+$color-6: #666;
+$color-7: #777;
+$color-8: #888;
+$color-9: #999;
+
+$color-validation-error: red;
+$color-validation-success: green;
+
+/* Spacing */
+$global-bottom-margin: ($baseline * 3);
+$blog-post-bottom-margin: ($baseline * 3);
+$widget-bottom-margin: ($baseline * 2);
+$extra-space: ($baseline * 2);
+$header-tb-padding: $baseline;
+$header-lr-padding: 0;
+
+/* Buttons */
+$btn-1-bg: $color-1;
+$btn-1-text-color: #fff;
+$btn-2-bg: $color-2;
+$btn-2-text-color: #fff;
+$btn-3-bg: $color-3;
+$btn-3-text-color: #fff;
+$btn-4-bg: $color-4;
+$btn-4-text-color: #fff;
+$btn-5-bg: $color-5;
+$btn-5-text-color: #fff;
+
+
+

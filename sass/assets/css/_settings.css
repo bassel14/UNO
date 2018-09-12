@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------------------------------------
+ * Site Settings File.
+ * File Path : scss/utilities/settings.scss
+ * Descrption : Master theme settings.
+ * ----------------------------------------------------------------------------------------
+ */
+/* Typography */
+/*  Colors */
+/* Spacing */
+/* Buttons */
+/*.bg-dark {
+    background-color: #343a40 !important;
+
+}*/
+img,
+video {
+  width: 100%;
+  max-width: 100%;  /* Adhere to container width. */
+  height: auto;  /* Make sure images are scaled correctly. */ }
+
+/* Apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul, ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }

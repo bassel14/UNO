@@ -1,0 +1,199 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * 4.4  Layout Menu styles.
+ * File Path : scss/layout/menu.scss
+ * Descrption : The style for theme menu.
+ * ----------------------------------------------------------------------------------------
+ */
+ .navbar-collapse {
+    flex-basis: -moz-available ! important;
+ }
+ .fixed_class {
+     position: fixed;
+ }
+
+.stickymenu.is-sticky,
+.stickyadmin.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.stickyadmin.is-sticky {
+    top: 32px;
+}
+
+
+
+.navbar {
+    border-radius: 0px;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    min-height: 70px;    
+}
+
+.navbar-nav {
+    max-width: 100%;
+    width: 100%;
+    display: inline-flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.navbar-brand {
+     padding: 0px;
+     > img {
+        vertical-align: middle;
+    }
+}
+
+.navbar-nav li {
+    min-width: 72px;
+    display: inline-block;
+    text-align: center;
+    a {
+        padding: 25px;
+        text-decoration: none;        
+        &:hover{
+            background-color: #000;
+        }
+    }
+}
+.active {
+    background-color: #000;   
+}
+.navbar-inverse .navbar-nav .current-menu-item a {
+    color: #fff;
+}
+
+.topbar-menu {
+    .active {
+        background-color: transparent;
+    }
+}
+
+
+/*
+
+.boxed-menu > li > a,
+.underline-menu > li > a,
+.none-menu > li > a {
+    padding: 0px 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 70px; 
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;    
+}
+
+.boxed-menu > li > a:hover, 
+.boxed-menu > li > a:focus,
+.underline-menu > li > a:hover:after, 
+.underline-menu > li > a:focus:after,
+.underline-menu .current-menu-item a:after  {
+    background-color: #000 ! important;
+    color: #fff;    
+    -webkit-transition: all 0.9s ease-in-out;
+       -moz-transition: all 0.9s ease-in-out;
+        -ms-transition: all 0.9s ease-in-out;
+         -o-transition: all 0.9s ease-in-out;
+            transition: all 0.9s ease-in-out; 
+}
+
+.underline-menu > li > a,
+.underline-menu .current-menu-item a {
+    position: relative;
+}
+
+.underline-menu > li > a:hover:after, 
+.underline-menu > li > a:focus:after,
+.underline-menu .current-menu-item a:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px; 
+    bottom:0;
+    left:0;   
+}
+
+.underline-menu .current-menu-item a,
+.none-menu .current-menu-item a{
+    background-color: transparent ! important;
+}
+
+*/
+
+
+/* ------------------ Dropdown Menu ------------ */
+
+/*.navbar-nav ul.dropdown,
+.navbar-nav ul.dropdown li ul.dropdown {
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    display: none;
+    float: right;
+    font-size: 14px;
+    right: 0;
+    list-style: outside none none;
+    margin: 0px 0 0;
+    min-width: 180px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    z-index: 1000;
+} 
+
+.navbar-nav ul.dropdown li ul.dropdown {
+    right: 100%;
+    margin-top: -25px;
+    margin-right: -1px;
+}*/
+
+/* Dropdown items */
+
+/*
+.navbar-nav ul.dropdown li {
+    clear: both;
+    width: 100%;
+    border: 0 none;
+    position: relative;
+}
+.navbar-nav li.has-sub:hover > ul.dropdown { 
+    display: block;
+}
+
+.navbar-nav li.has-sub > a:after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    margin-top: -8px;
+    margin-left: 5px;
+}
+
+.navbar-nav ul.dropdown li > a {
+    clear: both;
+    color: #9d9d9d;
+    display: block;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 3px 20px;
+    white-space: nowrap;
+    
+    &:hover{
+        color: #fff;
+    }
+}
+*/

@@ -1,0 +1,74 @@
+/* ----------------------------------------------------------------------------------------
+ * 2.2  Theme Utilitites File.
+ * File Path : scss/utilities/utilities.scss
+ * Descrption :  theme settings.
+ * ----------------------------------------------------------------------------------------
+ */
+
+/*--------------------------------------------------------------
+** 2.2.1 Standards
+--------------------------------------------------------------
+*/
+
+@media (min-width:1200px) {
+	.container {
+	 max-width:1200px ! important;
+	}
+}
+
+.img-responsive{
+	width: 100%;
+    max-width: 100%;     /* Adhere to container width. */
+    height: auto;        /* Make sure images are scaled correctly. */
+    padding: 5px 0 ;
+}
+	
+/* Apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.l-list-unstyled {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    
+    a {
+        text-decoration: none;
+    }
+}
+#top-bar ul,
+.widget ul {
+    
+	@extend .l-list-unstyled;
+    
+}
+/*--------------------------------------------------------------
+** 2.2.2 Alignments
+--------------------------------------------------------------
+*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+    
+   
