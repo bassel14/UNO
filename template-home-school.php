@@ -16,74 +16,164 @@ get_header();
 
     <div id="slider-holder">
  
-        The Slider Section
+        
+        <img id="si_1" src="<?php echo get_template_directory_uri(); ?>/assets/images/slider/1-2.jpg" alt="" />
         
     </div>
     <!-- end of slider -->
 
     <section class="about-section">
 
-        <div id="about-container">
+        <div class="container-fluid" id="about-container">
         
-            <div class="welcom-wraper">
-                <div class="welcom-letter">
-                  <!--   <div class="extra-wrapper"> -->
-                        <h2>Welcome To Montessori</h2>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/montesoryLady.jpg"" alt="" />
-                        <p>Who is Montessori? The basic idea in the Montessori philosophy of education is that all children carry within themselves the person they will become.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
-                   <!--  </div> -->
-                </div>
-            </div>
+            <div class="row">
             
-            <div class="about-varity">
-                <div class="varity-wraper">  
-                    <h2>Music For All Ages</h2>                     
-                    <div class="componont-icon">
-                        <i class="fas fa-music"></i>
+                <div class="col-sm-12 col-xl-4 welcom-wraper">
+                    <div class="welcom-letter">
+                        <h2>Welcome To Montessori</h2>
+                        <div class="lady-img">
+                            <figure class="alignleft">
+                                <img class="small-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/montesoryLady.jpg"" alt="" />
+                            </figure>
+                        
+                        </div>
+                        <p>Who is Montessori? The basic idea in the Montessori philosophy of education is that all children carry within themselves the person they will become.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. nisi lorem egestas odio, ultrices nec congue eget.</p>
                     </div>
-                    <p>The creative music, movement, and dramatics program is an on-going flexible process that integrates itself into the academic program of the International Montessori School.</p>
                 </div>
-                <div class="varity-wraper">   
-                    <h2>Sports for All Ages</h2>                    
-                    <div class="componont-icon">   
-                        <i class="fas fa-swimmer"></i>
-                    </div>
-                    <p>Dr. Montessori believed that this the beginning of conscious. It is brought about by the intelligence working in a concentrated way on the impressions given by the senses.</p>
-                </div>
-                <div class="varity-wraper">     
-                    <h2>Language for All Ages</h2>                  
-                    <div class="componont-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <p>Language is an important part of the entire Montessori curriculum. Its treatment as a separate subject comes only at the points in which it is necessary to give clarity to the child's mind – that is, to give him or her conscious awareness of language in order that it may be used more effectively.</p>
-                </div>
-            </div>
+                
+                <div class="col-sm-12 col-xl-8 about-varity">
+                    
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-sm-4 varity-wraper">  
+                            <h2>Music For All Ages</h2>                     
+                            <div class="componont-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <p>The creative music, movement, and dramatics program is an on-going flexible process that integrates itself into the academic program of the International Montessori School.</p>
+                            </div> <!-- end varity wrap -->
+                            
+                            <div class="col-sm-4 varity-wraper">   
+                                <h2>Sports for All Ages</h2>                    
+                                <div class="componont-icon">   
+                                    <i class="fas fa-swimmer"></i>
+                                </div>
+                                <p>Dr. Montessori believed that this the beginning of conscious. It is brought about by the intelligence working in a concentrated way on the impressions given by the senses.</p>
+                            </div> <!-- end varity wrap -->
+
+                            <div class="col-sm-4 varity-wraper">     
+                                <h2>Language for All Ages</h2>                  
+                                <div class="componont-icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <p>Language is an important part of the entire Montessori curriculum. Its treatment as a separate subject comes only at the points in which it is necessary to give clarity to the child's mind – that is, to give
+                                    him or her conscious awareness of language in order that it may be used more effectively.</p>
+                            </div> <!-- end varity wrap -->
+
+                        </div> <!-- end row -->
+                    </div> <!-- end container -->
+
+            </div> <!-- end about-varity -->           
         
         </div><!-- End about-container -->
        
     </section> <!-- End of About us Section -->
 
+    <section class="new-events-section">
+
+        <div class="container-fluid img-bg">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="sep-wrapper">
+                                <h2>Montessori News & Events</h2>
+                                <div class="sep-custom-link">
+                                    <a href="#">See all our news and events</a>
+                                </div>
+                            </div> <!-- end sep-wrapper -->
+                        </div>
+                    </div>
+                </div>
+            </div>>
+
+        </div>  <!-- End img-bg -->
+
+        <div class="container1">
+            <div class="row1">
+                <div class="col-sm-81">
+
+                    <main class="cards">
+
+                        <div class="card-1">
+                            <div class="card-wrapper no-top-margin"> 
+                                <div class="cards-img-container">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/post1.jpg" alt="first image" />
+                                </div>                                
+                                <div class="cards-desc-container extra-top-margin card-color-bg">
+                                    <h2>Mathmatic and Phisics class </h2>
+                                    <div class="card-date"><span class="tribe-event-date-start">Septemper 10, 2018</span></div>  
+                                    <p>Lommodo ligula eget dolor. Aenean massa. Cum sociis que penatibus et magnis dis parturient montes lorem, nascetur ridiculus mus. Donec…</p>
+                                </div> 
+                            </div>
+                        </div> <!-- end of card-1 -->                    
+
+                        <div class="card-2">
+                            <div class="card-wrapper no-top-margin"> 
+                                <div class="cards-img-container">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/post2.jpg" alt="first image" />
+                                </div>                                
+                                <div class="cards-desc-container extra-top-margin card-color-bg">
+                                    <h2>Haidi and friends return to School </h2>
+                                    <div class="card-date"><span class="tribe-event-date-start">Septemper 8, 2018</span></div>  
+                                    <p>Lommodo ligula eget dolor. Aenean massa. Cum sociis que penatibus et magnis dis parturient montes lorem, nascetur ridiculus mus. Donec…</p>
+                                </div> 
+                            </div>
+                        </div> <!-- end of card-2 --> 
+
+                        <div class="card-3">
+                            <div class="card-wrapper extra-car-top-margin card-color-bg-no-margin"> 
+                                <div class="card-title">
+                                    <h2>Events Calendar</h2>
+                                    <p>See all upcoming events</p>
+                                </div>
+                                <div class="cards-desc-container">
+                                    <ul class="cards-list">
+                                        <li>
+                                            <div class="card-date"><span class="tribe-event-date-start">February 8, 2019</span></div>    
+                                            <div class="card-info">Board Meeting »</div>
+                                        </li>
+                                        <li>
+                                            <div class="card-date"><span class="tribe-event-date-start">February 8, 2019</span></div>    
+                                            <div class="card-info">Most part fantastic faculty members for students »</div></li>
+                                        <li>
+                                            <div class="card-date"><span class="tribe-event-date-start">February 8, 2019</span></div>    
+                                            <div class="card-info">Advice: The future of Startups without Support »</div>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div> <!-- end of card-3 -->
+
+                    </main>
+
+                </div>
+
+                <div class="col-sm-41">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> <!-- End News Events Section -->
 
 
 
 
-
-    <section class="news-section">
-        News & Events Section
-    </section>
-    
-    <section class="school-life-section">
-        Daily life at School
-    </section>
-    
-    <section class="testimonials-section">
-        What Parents Say about us
-    </section>
-    
-    <section class="instagram-section">
-        Instagram Section
-    </section>
 
 
 
