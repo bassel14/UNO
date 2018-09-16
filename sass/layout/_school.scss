@@ -7,25 +7,12 @@ School Front Page
 */
 
 #about-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-    gap: 1em;
-    background-color: #333436 ;
-
-    img {
-        max-width: 20%;
-    }
+    background-color: #f1f4f4  ;
 }
 
 .welcom-wraper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
     background-color: #f8d557 ;
     border-top-right-radius: 50px;
-    position: relative;
 }
 
 .welcom-letter{
@@ -34,24 +21,29 @@ School Front Page
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 50px;
-    display: flex;
-    flex-direction: column;
 
     h2 {
         padding: 0;
         margin: 0;
     }
+    
+    .lady-img {
+        margin-bottom: 1.2em;
 
-    img {
-        padding: 0;
-        margin: 0;
+        .alignleft{
+            float: left;
+            margin-right: 1em;
+        }
+        .small-img{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            padding: 5px 0;
+        }
     }
-
-    p {
-        padding: 0;
-        margin: 0;
+    p { 
+        text-align: justify;
     }
-
 }
 
 @media only screen and (min-width: 1400px) {
@@ -59,79 +51,6 @@ School Front Page
         padding-left: 160px;
 
     }
-}
-
-
-
-
-
-
-/* 
-.welcom-wraper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #f8d557 ;
-    border-top-right-radius: 50px;
-    position: relative;
-}
-
-@media only screen and (max-width: 1280px) {
-    .welcom-wraper {
-        background-color: lightblue;
-
-    }
-
-}
-
-.welcom-letter{
-    display: flex;
-    align-items: center;
-    height: auto;
-    padding-bottom: 60px;
-    padding-right: 30px;
-    padding-top: 50px;
-
-}
-@media only screen and (min-width: 1400px) {
-    .welcom-letter {
-        padding-left: 160px;
-
-    }
-}
-.extra-wrapper {
-    position: relative;
-    padding-left: 20px;
-    max-width: 30%;
-
-    h2 {
-        font-size: 25px;
-        top: 0;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-    }
-
-    img {
-        max-width: 30%;
-        height: auto;
-        float: left;
-        padding: 15px;
-    }
-
-    p {
-        float: right;
-    }
-}
-
-.about-varity {
-    display: grid;
-    max-width: 100%;
-    margin: auto;
-    padding-top: 45px;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-    grid-gap: 1rem;
-
 }
 .varity-wraper {
     display: flex;
@@ -144,10 +63,61 @@ School Front Page
         width: 70px;
         height: 70px;
         line-height: 70px;
+        font-size: 35px;
+        background-color: #0494fa;
+        color: #fff;
+        margin-left: 25px;
+        border-radius: 50%;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .componont-icon {
+            margin-left: 2px;
+        }
+        h2{
+            width: 60%;
+            line-height: 35px ! important;
+        }
+        p {
+            margin-top: 5px;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 70px;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+        color: #222;
+    }
+    p {
+        color: #979797;
+    }
+} 
+
+.about-componont-type2 {
+    display: grid;
+    margin: auto;
+    padding-top: 45px;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 1rem;
+
+}
+.componont-item-type2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    background-color: #fff;
+
+    .componont-icon {  
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
         font-size: 40px;
         background-color: #0494fa;
         color: #fff;
-        margin-left: 20px;
+        margin-right: 10px;
         border-radius: 50%;
     }
 
@@ -156,12 +126,316 @@ School Front Page
         line-height: 70px;
         font-weight: 700;
         margin: 0 0 20px 0;
-        color: #fff;
+    }
+    p {
+        opacity: 0.6;
     }
 
-    p {
-        color: #979797;
+}
+
+/*
+* Programs Section
+*/
+
+.section-header{
+    padding: 50px 0px 0px;
+    text-align: center;
+    .section-title {
+        margin-bottom: 10px;
+        h2{
+            margin: 0px;
+            color: #e32426;
+            letter-spacing: 2px;
+            line-height: 42px;
+        }
+    }
+    .section-sub-title {   
+        p{
+            color: #adadad;
+        }
     }
 } 
 
+    
+.main-cards-type-4 {
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 28px;
+
+    .card-1, 
+    .card-2, 
+    .card-3, 
+    .card-4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-wrapper {
+        .cards-desc-container {
+            border-top: 0px ! important;
+            margin: 5px;
+    
+            h2 {
+                font-size: 23px;
+                color: #3c3950;
+                line-height: 25px ! important;
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+.spacer-content{
+    content: "";
+    width: 100%;
+    height: 100px;
+}    
+.main-cards-type-3 {
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 28px;
+
+    .card-1, 
+    .card-2, 
+    .card-3, 
+    .card-4 {
+        margin: 0;
+        padding: 0;
+        box-shadow: 0px 2px 7px #d4d4d4;
+    }
+    
+    .card-wrapper {
+
+        .card-title {
+            margin: 0;
+            padding-left: 24px;
+            padding-bottom: 23px;
+            h2 {
+                font-size: 26px;
+                letter-spacing: 3px;
+            }
+        }
+        .cards-desc-container {
+            border-top: 0px ! important;
+            margin-bottom: 0px ! important;
+    
+            h2 {
+                font-size: 23px;
+                color: #3c3950;
+                line-height: 25px ! important;
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 0px ! important;
+            }
+
+            .type-colored li {
+                display: table;
+                width: 100%;
+                font-weight: 500;
+                border-top: 1px solid #ddd;
+                border-bottom: 0px ! important;
+
+                .text-left {
+                    display: table-cell;
+                }
+                .text-right {
+                    display: table-cell;
+                    text-align: right;
+                }
+
+                &:hover {
+                    background-color: #fbfbfb;
+
+                    span {
+                        color: #6c98e1 ;
+
+                    }
+                }
+            }
+            
+            .type-colored li:last-child {
+                background-color: #e5e5e5 ;
+            }
+            
+            .color-green li:last-child  {
+                background-color: #84c54e;
+            }
+            
+            .color-red li:last-child  {
+                background-color: #e52d27;
+            }
+            
+            .color-blue li:last-child  {
+                background-color: #6c98e1 ;
+            }
+        }
+    }
+}
+/*
+* News Events Section
 */
+
+.img-bg {
+    background-image: url("http://localhost/wordpress/wp-content/themes/uno/assets/images/letters.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sep-wrapper {
+    color: #ffffff;
+    text-align: left;
+    padding-top: 65px;
+    padding-bottom: 95px;
+    
+    h2 {
+        margin-top: 30px !important;
+        margin-bottom: 4px !important;
+    }
+    
+    .sep-custom-link {
+        font-size: 17px;
+        a{
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: #e32426 ;
+            }
+        }
+    }
+
+}
+
+@supports (display: grid) {
+    
+    .card-1, .card-2, .card-3  {
+        margin: 0;
+    }
+    .cards {
+        display: grid;
+        max-width: 1200px;
+        margin: auto;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+        margin-top: 28px;
+    }
+}
+
+.card-wrapper {
+    position: relative;
+    
+    .card-title {
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 1.5rem;
+        letter-spacing: 3px;
+
+        h2{
+            margin-bottom: 0px;
+        }
+        a{
+            color: #afafaf;
+            text-decoration: none;
+            font-size: 15px;
+            letter-spacing: 1px;
+
+            &:hover {
+                color: #e32426 ;
+            }
+        }
+    }
+
+    .cards-desc-container{
+        margin-bottom: 20px;
+        text-align: left;
+        color: #052d49;
+        border-top: 1px solid #ddd;
+        h2 {
+            margin: 0px;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 22px;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            
+            a{
+                color: #222;
+                text-decoration: none;
+
+                &:hover {
+                    color: #e32426 ;
+                }
+            }
+        }
+        .card-date {
+            color: #878787;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 7px;
+        }
+        p{
+            font-size: 17px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+        ul{
+            list-style: none;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: 1px;
+
+            li {
+                box-shadow: none;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 0;
+                padding: 23px 30px;
+                background: none;
+                
+                a{
+                    color: #222;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #e32426 ;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.card-color-bg {
+    background-color: #fff;
+    position: relative;
+    padding: 16px 20px;
+    margin: 16px 19px;
+    z-index: 9;
+}
+.card-color-bg-no-margin {
+    background-color: #fff;
+}
+@media only screen and (max-width: 1023px) {
+    .extra-top-margin  {
+        margin-top: 0px;
+
+    }
+}
+.extra-top-margin {
+    margin-top: -50px;
+}
+.extra-car-top-margin {
+    margin-top: -95px;
+}
+.no-top-margin {
+    margin-top: 0px;
+}
